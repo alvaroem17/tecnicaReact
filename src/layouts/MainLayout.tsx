@@ -1,10 +1,10 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const MainLayout: React.FC = () => (
   <div className="min-h-screen max-w-screen flex flex-col">
     <header className="p-4 bg-gray-800 text-white text-center">
-      <h1 className="text-2xl font-bold">My App</h1>
+      <Link to="/" className='!text-white'><h1 className="text-2xl font-bold">My App</h1></Link>
     </header>
     <div className="flex-1">
       <Outlet />
