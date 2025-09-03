@@ -3,8 +3,9 @@ import { Link, Outlet } from 'react-router-dom';
 
 const MainLayout: React.FC = () => (
   <div className="min-h-screen max-w-screen flex flex-col">
-    <header className="p-4 bg-gray-800 text-white text-center">
-      <Link to="/" className='!text-white'><h1 className="text-2xl font-bold">My App</h1></Link>
+    <header className="p-4 bg-gray-800 text-white flex justify-between items-center">
+      <Link to="/" className='!text-white w-full flex justify-center'><h1 className="text-2xl font-bold">My App</h1></Link>
+      <Link to="/login" className="self-center text-white underline">Login</Link>
     </header>
     <div className="flex-1">
       <Outlet />

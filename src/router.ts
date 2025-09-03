@@ -14,6 +14,10 @@ export const router =  createBrowserRouter([{
       {
         path: "/:id",
         Component: Details,
+      },
+      {
+        path: "/login",
+        lazy: () => import('./pages/Login').then(module => ({ Component: module.Login })),
       }
     ] 
   },
